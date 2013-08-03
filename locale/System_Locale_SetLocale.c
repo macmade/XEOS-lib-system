@@ -61,104 +61,59 @@
 
 /* $Id$ */
 
-#ifndef __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__
-#define __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__
+#include <locale.h>
+#include <system/locale.h>
+#include <system/__private/locale.h>
+#include <stdlib.h>
+#include <string.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#include <system/types/size_t.h>
-#include <stdbool.h>
-
-struct __System_Locale_Collate
+char * System_Locale_SetLocale( int category, const char * name )
 {
-    size_t count;
-    int  * entries;
-};
-
-struct __System_Locale_CType
-{
-    int   * upper;
-    int   * lower;
-    int   * digit;
-    int   * space;
-    int   * cntrl;
-    int   * punct;
-    int   * xdigit;
-    int   * blank;
-    int ( * toupper )[ 2 ];
-    int ( * tolower )[ 2 ];
-    int     space_c;
-    char    __pad_0[ 4 ];
-    size_t  upper_count;
-    size_t  lower_count;
-    size_t  digit_count;
-    size_t  space_count;
-    size_t  cntrl_count;
-    size_t  punct_count;
-    size_t  xdigit_count;
-    size_t  blank_count;
-    size_t  toupper_count;
-    size_t  tolower_count;
-};
-
-struct __System_Locale_Messages
-{
-    const char * yesexpr;
-    const char * noexpr;
-};
-
-struct __System_Locale_Monetary
-{
-    const char    * int_curr_symbol;
-    const char    * currency_symbol;
-    const char    * mon_decimal_point;
-    const char    * mon_thousands_sep;
-    const char    * positive_sign;
-    const char    * negative_sign;
-    const char    * mon_grouping;
-    int             int_frac_digits;
-    int             frac_digits;
-    int             p_cs_precedes;
-    int             p_sep_by_space;
-    int             n_cs_precedes;
-    int             n_sep_by_space;
-    int             p_sign_posn;
-    int             n_sign_posn;
-    int             int_p_cs_precedes;
-    int             int_p_sep_by_space;
-    int             int_n_cs_precedes;
-    int             int_n_sep_by_space;
-    int             int_p_sign_posn;
-    int             int_n_sign_posn;
-};
-
-struct __System_Locale_Numeric
-{
-    const char * decimal_point;
-    const char * thousands_sep;
-    const char * grouping;
-};
-
-struct __System_Locale_Time
-{
-    const char * abday[ 7 ];
-    const char * day[ 7 ];
-    const char * abmon[ 12 ];
-    const char * mon[ 12 ];
-    const char * am_pm[ 2 ];
-    const char * d_t_fmt;
-    const char * d_fmt;
-    const char * t_fmt;
-    const char * t_fmt_ampm;
-};
-
-extern locale_t __System_Locale_DefaultLocale;
-extern bool     __System_Locale_LocalConvNeedUpdate;
-
-#ifdef __cplusplus
+    System_LocaleRef currentLocale;
+    System_LocaleRef newLocale;
+    
+    currentLocale   = System_Locale_GetCurrentLocale();
+    newLocale       = System_Locale_GetLocale( name );
+    
+    if( category == LC_ALL )
+    {
+        currentLocale->lc_collate   = newLocale->lc_collate;
+        currentLocale->lc_ctype     = newLocale->lc_ctype;
+        currentLocale->lc_messages  = newLocale->lc_messages;
+        currentLocale->lc_monetary  = newLocale->lc_monetary;
+        currentLocale->lc_numeric   = newLocale->lc_numeric;
+        currentLocale->lc_time      = newLocale->lc_time;
+        
+        __System_Locale_LocalConvNeedUpdate = true;
+    }
+    else if( category == LC_COLLATE )
+    {
+        currentLocale->lc_collate = newLocale->lc_collate;
+    }
+    else if( category == LC_CTYPE )
+    {
+        currentLocale->lc_ctype = newLocale->lc_ctype;
+    }
+    else if( category == LC_MESSAGES )
+    {
+        currentLocale->lc_messages = newLocale->lc_messages;
+    }
+    else if( category == LC_MONETARY )
+    {
+        currentLocale->lc_monetary = newLocale->lc_monetary;
+        
+        __System_Locale_LocalConvNeedUpdate = true;
+    }
+    else if( category == LC_NUMERIC )
+    {
+        currentLocale->lc_numeric = newLocale->lc_numeric;
+        
+        __System_Locale_LocalConvNeedUpdate = true;
+    }
+    else if( category == LC_TIME )
+    {
+        currentLocale->lc_time = newLocale->lc_time;
+    }
+    
+    return ( char * )( newLocale->name );
 }
-#endif
-
-#endif /* __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__ */

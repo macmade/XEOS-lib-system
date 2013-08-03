@@ -61,104 +61,39 @@
 
 /* $Id$ */
 
-#ifndef __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__
-#define __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#include <system/types/size_t.h>
+#include <system/locale.h>
+#include <system/__private/locale.h>
+#include <stdlib.h>
 #include <stdbool.h>
 
-struct __System_Locale_Collate
+static bool     __inited = false;
+static locale_t __locale = 
 {
-    size_t count;
-    int  * entries;
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL
 };
 
-struct __System_Locale_CType
+System_LocaleRef System_Locale_GetCurrentLocale( void )
 {
-    int   * upper;
-    int   * lower;
-    int   * digit;
-    int   * space;
-    int   * cntrl;
-    int   * punct;
-    int   * xdigit;
-    int   * blank;
-    int ( * toupper )[ 2 ];
-    int ( * tolower )[ 2 ];
-    int     space_c;
-    char    __pad_0[ 4 ];
-    size_t  upper_count;
-    size_t  lower_count;
-    size_t  digit_count;
-    size_t  space_count;
-    size_t  cntrl_count;
-    size_t  punct_count;
-    size_t  xdigit_count;
-    size_t  blank_count;
-    size_t  toupper_count;
-    size_t  tolower_count;
-};
-
-struct __System_Locale_Messages
-{
-    const char * yesexpr;
-    const char * noexpr;
-};
-
-struct __System_Locale_Monetary
-{
-    const char    * int_curr_symbol;
-    const char    * currency_symbol;
-    const char    * mon_decimal_point;
-    const char    * mon_thousands_sep;
-    const char    * positive_sign;
-    const char    * negative_sign;
-    const char    * mon_grouping;
-    int             int_frac_digits;
-    int             frac_digits;
-    int             p_cs_precedes;
-    int             p_sep_by_space;
-    int             n_cs_precedes;
-    int             n_sep_by_space;
-    int             p_sign_posn;
-    int             n_sign_posn;
-    int             int_p_cs_precedes;
-    int             int_p_sep_by_space;
-    int             int_n_cs_precedes;
-    int             int_n_sep_by_space;
-    int             int_p_sign_posn;
-    int             int_n_sign_posn;
-};
-
-struct __System_Locale_Numeric
-{
-    const char * decimal_point;
-    const char * thousands_sep;
-    const char * grouping;
-};
-
-struct __System_Locale_Time
-{
-    const char * abday[ 7 ];
-    const char * day[ 7 ];
-    const char * abmon[ 12 ];
-    const char * mon[ 12 ];
-    const char * am_pm[ 2 ];
-    const char * d_t_fmt;
-    const char * d_fmt;
-    const char * t_fmt;
-    const char * t_fmt_ampm;
-};
-
-extern locale_t __System_Locale_DefaultLocale;
-extern bool     __System_Locale_LocalConvNeedUpdate;
-
-#ifdef __cplusplus
+    System_LocaleRef defaultLocale;
+    
+    if( __inited == false )
+    {
+        defaultLocale = System_Locale_GetDefaultLocale();
+        __inited      = true;
+        
+        __locale.lc_collate     = defaultLocale->lc_collate;
+        __locale.lc_ctype       = defaultLocale->lc_ctype;
+        __locale.lc_messages    = defaultLocale->lc_messages;
+        __locale.lc_monetary    = defaultLocale->lc_monetary;
+        __locale.lc_numeric     = defaultLocale->lc_numeric;
+        __locale.lc_time        = defaultLocale->lc_time;
+    }
+    
+    return &__locale;
 }
-#endif
-
-#endif /* __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__ */
