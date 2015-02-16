@@ -62,7 +62,7 @@
 include make/Config.mk
 include make/Targets.mk
 
-PROMPT  := XEOS SOURCE LIB C99
+PROMPT  := XEOS SOURCE LIB SYSTEM
 DEPS    := XEOS-lib-posix XEOS-lib-c99
 FILES   := $(call XEOS_FUNC_C_FILES,$(DIR_SRC)atomic/) \
            $(call XEOS_FUNC_C_FILES,$(DIR_SRC)error/)  \
