@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_VA_LIST_H__
-#define __XEOS_LIB_SYSTEM_TYPES_VA_LIST_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_VA_LIST_H
+#define XEOS_LIB_SYSTEM_TYPES_VA_LIST_H
 
 #include <system/types/__private/stdint.h>
 
@@ -78,4 +78,4 @@
     typedef char * va_list;
 #endif
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_VA_LIST_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_VA_LIST_H */

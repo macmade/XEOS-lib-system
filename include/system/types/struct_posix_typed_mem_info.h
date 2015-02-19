@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H__
-#define __XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H
+#define XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H
 
 #include <system/types/__private/stdint.h>
 #include <system/types/size_t.h>
@@ -78,4 +78,4 @@ struct posix_typed_mem_info
     size_t posix_tmi_length;
 };
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H */

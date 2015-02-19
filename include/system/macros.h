@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_MACROS_H__
-#define __XEOS_LIB_SYSTEM_MACROS_H__
+#ifndef XEOS_LIB_SYSTEM_MACROS_H
+#define XEOS_LIB_SYSTEM_MACROS_H
 
 /*!
  * @def         WEAK_ATTRIBUTE
@@ -170,4 +170,4 @@
     #define UNLIKELY( _x_ )     !!( _x_ )
 #endif
 
-#endif /* __XEOS_LIB_SYSTEM_MACROS_H__ */
+#endif /* XEOS_LIB_SYSTEM_MACROS_H */

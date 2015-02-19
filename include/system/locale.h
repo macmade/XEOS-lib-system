@@ -62,13 +62,13 @@
 /* $Id$ */
 
 /*!
- * @header          atomic.h
+ * @header          locale.h
  * @author          Jean-David Gadina
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_LOCALE_H__
-#define __XEOS_LIB_SYSTEM_LOCALE_H__
+#ifndef XEOS_LIB_SYSTEM_LOCALE_H
+#define XEOS_LIB_SYSTEM_LOCALE_H
 
 #include <stdbool.h>
 #include <system/types/locale_t.h>
@@ -119,4 +119,4 @@ int  System_Locale_CType_ToLower( System_Locale_CTypeRef ctype, int c );
 int  System_Locale_CType_ToUpper( System_Locale_CTypeRef ctype, int c );
 int  System_Locale_CType_ToASCII( System_Locale_CTypeRef ctype, int c );
 
-#endif /* __XEOS_LIB_SYSTEM_LOCALE_H__ */
+#endif /* XEOS_LIB_SYSTEM_LOCALE_H */

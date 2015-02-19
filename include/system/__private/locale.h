@@ -61,8 +61,8 @@
 
 /* $Id$ */
 
-#ifndef __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__
-#define __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__
+#ifndef XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H
+#define XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -172,4 +172,4 @@ extern bool                   __System_Locale_LocalConvNeedUpdate;
 }
 #endif
 
-#endif /* __XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H__ */
+#endif /* XEOS_LIB_SYSTEM___PRIVATE_LOCALE_H */

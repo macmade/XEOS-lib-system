@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_STRUCT_SIGEVENT_H__
-#define __XEOS_LIB_SYSTEM_TYPES_STRUCT_SIGEVENT_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_STRUCT_SIGEVENT_H
+#define XEOS_LIB_SYSTEM_TYPES_STRUCT_SIGEVENT_H
 
 #include <system/types/__private/stdint.h>
 #include <system/types/union_sigval.h>
@@ -84,4 +84,4 @@ struct sigevent
     void( * sigev_notify_function )( union sigval );
 };
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_STRUCT_SIGEVENT_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_STRUCT_SIGEVENT_H */

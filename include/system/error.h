@@ -67,9 +67,9 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_ERROR_H__
-#define __XEOS_LIB_SYSTEM_ERROR_H__
+#ifndef XEOS_LIB_SYSTEM_ERROR_H
+#define XEOS_LIB_SYSTEM_ERROR_H
 
 const char * System_Error_StringFromError( int errnum );
 
-#endif /* __XEOS_LIB_SYSTEM_ERROR_H__ */
+#endif /* XEOS_LIB_SYSTEM_ERROR_H */

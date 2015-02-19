@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_STRUCT_SOCKADDR_IN6_H__
-#define __XEOS_LIB_SYSTEM_TYPES_STRUCT_SOCKADDR_IN6_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_STRUCT_SOCKADDR_IN6_H
+#define XEOS_LIB_SYSTEM_TYPES_STRUCT_SOCKADDR_IN6_H
 
 #include <system/types/__private/stdint.h>
 #include <system/types/sa_family_t.h>
@@ -85,4 +85,4 @@ struct sockaddr_in6
     uint32_t        sin6_scope_id;
 };
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_STRUCT_SOCKADDR_IN6_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_STRUCT_SOCKADDR_IN6_H */

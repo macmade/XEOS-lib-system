@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_ONCE_FLAG_H__
-#define __XEOS_LIB_SYSTEM_TYPES_ONCE_FLAG_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_ONCE_FLAG_H
+#define XEOS_LIB_SYSTEM_TYPES_ONCE_FLAG_H
 
 #include <system/types/__private/threads.h>
 
@@ -76,4 +76,4 @@
 
 typedef struct __XEOS_ThreadOnce once_flag;
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_ONCE_FLAG_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_ONCE_FLAG_H */

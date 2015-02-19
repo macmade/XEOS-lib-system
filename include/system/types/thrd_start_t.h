@@ -67,9 +67,9 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_THRD_START_T_H__
-#define __XEOS_LIB_SYSTEM_TYPES_THRD_START_T_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_THRD_START_T_H
+#define XEOS_LIB_SYSTEM_TYPES_THRD_START_T_H
 
 typedef int ( * thrd_start_t )( void * );
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_THRD_START_T_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_THRD_START_T_H */

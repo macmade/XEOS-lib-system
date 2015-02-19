@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H__
-#define __XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H
+#define XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H
 
 #include <system/types/__private/stdint.h>
 #include <system/types/uint8_t.h>
@@ -78,4 +78,4 @@ struct in6_addr
     uint8_t s6_addr[ 16 ];
 };
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H */

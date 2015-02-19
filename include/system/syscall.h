@@ -61,8 +61,8 @@
 
 /* $Id$ */
 
-#ifndef __LIBPOSIX_SYS_SYSCALL_H__
-#define __LIBPOSIX_SYS_SYSCALL_H__
+#ifndef LIBPOSIX_SYS_SYSCALL_H
+#define LIBPOSIX_SYS_SYSCALL_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -91,4 +91,4 @@ uint32_t syscall( int n, ... );
 }
 #endif
 
-#endif /* __LIBPOSIX_SYS_SYSCALL_H__ */
+#endif /* LIBPOSIX_SYS_SYSCALL_H */

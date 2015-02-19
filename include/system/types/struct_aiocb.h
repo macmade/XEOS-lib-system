@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_STRUCT_AIOCB_H__
-#define __XEOS_LIB_SYSTEM_TYPES_STRUCT_AIOCB_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_STRUCT_AIOCB_H
+#define XEOS_LIB_SYSTEM_TYPES_STRUCT_AIOCB_H
 
 #include <system/types/__private/stdint.h>
 #include <system/types/size_t.h>
@@ -88,4 +88,4 @@ struct aiocb
     off_t           aio_offset;
 };
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_STRUCT_AIOCB_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_STRUCT_AIOCB_H */

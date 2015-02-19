@@ -67,11 +67,11 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES_SEEK_CUR_H__
-#define __XEOS_LIB_SYSTEM_TYPES_SEEK_CUR_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES_SEEK_CUR_H
+#define XEOS_LIB_SYSTEM_TYPES_SEEK_CUR_H
 
 #include <system/types/__private/stdint.h>
 
 #define SEEK_CUR 2
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES_SEEK_CUR_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES_SEEK_CUR_H */

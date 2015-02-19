@@ -67,8 +67,8 @@
  * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
  */
 
-#ifndef __XEOS_LIB_SYSTEM_TYPES___PRIVATE_THREADS_H__
-#define __XEOS_LIB_SYSTEM_TYPES___PRIVATE_THREADS_H__
+#ifndef XEOS_LIB_SYSTEM_TYPES___PRIVATE_THREADS_H
+#define XEOS_LIB_SYSTEM_TYPES___PRIVATE_THREADS_H
 
 #include <system/types/__private/stdint.h>
 
@@ -103,4 +103,4 @@ struct __XEOS_ThreadOnce
     __XEOS_UInt32 __reserved[ 8 ];
 };
 
-#endif /* __XEOS_LIB_SYSTEM_TYPES___PRIVATE_THREADS_H__ */
+#endif /* XEOS_LIB_SYSTEM_TYPES___PRIVATE_THREADS_H */
