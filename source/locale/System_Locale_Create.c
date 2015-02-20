@@ -115,7 +115,7 @@ System_LocaleRef System_Locale_Create( int categoryMask, const char * name, Syst
     
     if( locale != NULL )
     {
-        locale->name         = name;
+        locale->name         = newName;
         locale->lc_collate   = collate;
         locale->lc_ctype     = ctype;
         locale->lc_messages  = messages;

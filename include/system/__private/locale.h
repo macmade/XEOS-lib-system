@@ -105,58 +105,58 @@ struct __System_Locale_CType
 
 struct __System_Locale_Messages
 {
-    const char * yesexpr;
-    const char * noexpr;
+    char * yesexpr;
+    char * noexpr;
 };
 
 struct __System_Locale_Monetary
 {
-    const char    * int_curr_symbol;
-    const char    * currency_symbol;
-    const char    * mon_decimal_point;
-    const char    * mon_thousands_sep;
-    const char    * positive_sign;
-    const char    * negative_sign;
-    const char    * mon_grouping;
-    int             int_frac_digits;
-    int             frac_digits;
-    int             p_cs_precedes;
-    int             p_sep_by_space;
-    int             n_cs_precedes;
-    int             n_sep_by_space;
-    int             p_sign_posn;
-    int             n_sign_posn;
-    int             int_p_cs_precedes;
-    int             int_p_sep_by_space;
-    int             int_n_cs_precedes;
-    int             int_n_sep_by_space;
-    int             int_p_sign_posn;
-    int             int_n_sign_posn;
+    char    * int_curr_symbol;
+    char    * currency_symbol;
+    char    * mon_decimal_point;
+    char    * mon_thousands_sep;
+    char    * positive_sign;
+    char    * negative_sign;
+    char    * mon_grouping;
+    int       int_frac_digits;
+    int       frac_digits;
+    int       p_cs_precedes;
+    int       p_sep_by_space;
+    int       n_cs_precedes;
+    int       n_sep_by_space;
+    int       p_sign_posn;
+    int       n_sign_posn;
+    int       int_p_cs_precedes;
+    int       int_p_sep_by_space;
+    int       int_n_cs_precedes;
+    int       int_n_sep_by_space;
+    int       int_p_sign_posn;
+    int       int_n_sign_posn;
 };
 
 struct __System_Locale_Numeric
 {
-    const char * decimal_point;
-    const char * thousands_sep;
-    const char * grouping;
+    char * decimal_point;
+    char * thousands_sep;
+    char * grouping;
 };
 
 struct __System_Locale_Time
 {
-    const char * abday[ 7 ];
-    const char * day[ 7 ];
-    const char * abmon[ 12 ];
-    const char * mon[ 12 ];
-    const char * am_pm[ 2 ];
-    const char * d_t_fmt;
-    const char * d_fmt;
-    const char * t_fmt;
-    const char * t_fmt_ampm;
+    char * abday[ 7 ];
+    char * day[ 7 ];
+    char * abmon[ 12 ];
+    char * mon[ 12 ];
+    char * am_pm[ 2 ];
+    char * d_t_fmt;
+    char * d_fmt;
+    char * t_fmt;
+    char * t_fmt_ampm;
 };
 
 struct __System_Locale
 {
-    const char                      * name;
+    char                            * name;
     struct __System_Locale_Collate  * lc_collate;
     struct __System_Locale_CType    * lc_ctype;
     struct __System_Locale_Messages * lc_messages;

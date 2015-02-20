@@ -67,7 +67,7 @@
 
 void System_Locale_Free( System_LocaleRef locale )
 {
-    free( ( void * )( locale->name ) );
+    free( locale->name );
     free( locale->lc_collate );
     free( locale->lc_ctype );
     free( locale->lc_messages );
