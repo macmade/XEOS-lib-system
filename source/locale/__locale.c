@@ -65,8 +65,6 @@
 #include <system/__private/locale.h>
 #include <stdlib.h>
 
-#define __PAD_CHAR_4 { 0, 0, 0, 0 }
-
 static int __System_Locale_DefaultLocale_Collate_Entries[] =
 {
     0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,
@@ -209,7 +207,7 @@ static struct __System_Locale_CType __System_Locale_DefaultLocale_CType =
     __System_Locale_DefaultLocale_Collate_ToUpper,
     __System_Locale_DefaultLocale_Collate_ToLower,
     0x20,
-    __PAD_CHAR_4,
+    { 0, 0, 0, 0 },
     sizeof( __System_Locale_DefaultLocale_Collate_Upper )   / 4,
     sizeof( __System_Locale_DefaultLocale_Collate_Lower )   / 4,
     sizeof( __System_Locale_DefaultLocale_Collate_Digit )   / 4,
