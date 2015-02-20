@@ -77,14 +77,14 @@ struct __XEOS_Thread
     __XEOS_UInt32 __reserved[ 8 ];
 };
 
-#define __XEOS_THREAD_COND_INITIALIZER  { 0, 0, 0, 0, 0, 0, 0, 0 }
+#define XEOS_THREAD_COND_INITIALIZER { 0, 0, 0, 0, 0, 0, 0, 0 }
 
 struct __XEOS_ThreadCond
 {
     __XEOS_UInt32 __reserved[ 8 ];
 };
 
-#define __XEOS_THREAD_MUTEX_INITIALIZER { 0, 0, 0, 0, 0, 0, 0, 0 }
+#define XEOS_THREAD_MUTEX_INITIALIZER { 0, 0, 0, 0, 0, 0, 0, 0 }
 
 struct __XEOS_ThreadMutex
 {
@@ -96,7 +96,7 @@ struct __XEOS_ThreadKey
     __XEOS_UInt32 __reserved[ 8 ];
 };
 
-#define __XEOS_THREAD_ONCE_INITIALIZER  { 0, 0, 0, 0, 0, 0, 0, 0 }
+#define XEOS_THREAD_ONCE_INITIALIZER { 0, 0, 0, 0, 0, 0, 0, 0 }
 
 struct __XEOS_ThreadOnce
 {
