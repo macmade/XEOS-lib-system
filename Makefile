@@ -64,7 +64,7 @@ include make/Targets.mk
 
 PROMPT  := XEOS SOURCE LIB SYSTEM
 DEPS    := XEOS-lib-posix XEOS-lib-c99
-FILES   := $(call XEOS_FUNC_C_FILES,$(DIR_SRC)atomic/) \
+FILES   := $(call XEOS_FUNC_S_FILES,$(DIR_SRC)atomic/) \
            $(call XEOS_FUNC_C_FILES,$(DIR_SRC)error/)  \
            $(call XEOS_FUNC_C_FILES,$(DIR_SRC)locale/) \
            $(call XEOS_FUNC_S_FILES,$(DIR_SRC)rt/)     \
