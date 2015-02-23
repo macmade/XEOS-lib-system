@@ -138,8 +138,6 @@
 		055EB4421A924602009ACFEC /* wchar_t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wchar_t.h; sourceTree = "<group>"; };
 		055EB4431A924602009ACFEC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		055EB4441A924602009ACFEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		055EB4471A924602009ACFEC /* System_Atomic.32.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = System_Atomic.32.s; sourceTree = "<group>"; };
-		055EB4481A924602009ACFEC /* System_Atomic.64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = System_Atomic.64.s; sourceTree = "<group>"; };
 		055EB44A1A924602009ACFEC /* System_Error_StringFromError.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = System_Error_StringFromError.c; sourceTree = "<group>"; };
 		055EB44C1A924602009ACFEC /* __locale.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = __locale.c; sourceTree = "<group>"; };
 		055EB44D1A924602009ACFEC /* System_Locale_Create.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = System_Locale_Create.c; sourceTree = "<group>"; };
@@ -185,6 +183,8 @@
 		055EB47A1A924602009ACFEC /* __udivdi3.32.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = __udivdi3.32.s; sourceTree = "<group>"; };
 		055EB47B1A924602009ACFEC /* __umoddi3.32.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = __umoddi3.32.s; sourceTree = "<group>"; };
 		055EB47D1A924602009ACFEC /* syscall.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = syscall.c; sourceTree = "<group>"; };
+		05C954E41A9BB3CD006F5BC0 /* System_Atomic.i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = System_Atomic.i386.s; sourceTree = "<group>"; };
+		05C954E51A9BB3CD006F5BC0 /* System_Atomic.x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = System_Atomic.x86_64.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -372,8 +372,8 @@
 		055EB4461A924602009ACFEC /* atomic */ = {
 			isa = PBXGroup;
 			children = (
-				055EB4471A924602009ACFEC /* System_Atomic.32.s */,
-				055EB4481A924602009ACFEC /* System_Atomic.64.s */,
+				05C954E41A9BB3CD006F5BC0 /* System_Atomic.i386.s */,
+				05C954E51A9BB3CD006F5BC0 /* System_Atomic.x86_64.s */,
 			);
 			path = atomic;
 			sourceTree = "<group>";
