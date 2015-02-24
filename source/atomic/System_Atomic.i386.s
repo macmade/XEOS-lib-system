@@ -59,6 +59,11 @@
 ; OF THE POSSIBILITY OF SUCH DAMAGE.
 ;-------------------------------------------------------------------------------
 
+;-------------------------------------------------------------------------------
+; @author           Jean-David Gadina
+; @copyright        (c) 2010-2015, Jean-David Gadina - www.xs-labs.com
+;-------------------------------------------------------------------------------
+
 global System_Atomic_MemoryBarrier
 global System_Atomic_CompareAndSwap8
 global System_Atomic_CompareAndSwap16
