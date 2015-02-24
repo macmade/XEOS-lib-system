@@ -59,14 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
-/*!
- * @header          posix_typed_mem_info.h
- * @author          Jean-David Gadina
- * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
- */
-
 #ifndef XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H
 #define XEOS_LIB_SYSTEM_TYPES_STRUCT_POSIX_TYPED_MEM_INFO_H
 

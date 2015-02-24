@@ -59,14 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
-/*!
- * @header          struct_in6_addr.h
- * @author          Jean-David Gadina
- * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
- */
-
 #ifndef XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H
 #define XEOS_LIB_SYSTEM_TYPES_STRUCT_IN6_ADDR_H
 

@@ -59,14 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
-/*!
- * @header          struct_ipv6_mreq.h
- * @author          Jean-David Gadina
- * @copyright       (c) 2010-2013, Jean-David Gadina - www.xs-labs.com
- */
-
 #ifndef XEOS_LIB_SYSTEM_TYPES_IPV6_MREQ_H
 #define XEOS_LIB_SYSTEM_TYPES_IPV6_MREQ_H
 

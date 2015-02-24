@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #ifndef LIBPOSIX_SYS_SYSCALL_H
 #define LIBPOSIX_SYS_SYSCALL_H
 

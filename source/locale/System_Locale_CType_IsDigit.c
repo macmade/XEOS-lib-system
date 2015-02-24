@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <system/locale.h>
 #include <system/__private/locale.h>
 #include <stdlib.h>
